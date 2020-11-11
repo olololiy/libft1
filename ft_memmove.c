@@ -1,34 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/05 18:57:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:29:54 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/08 13:16:48 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/10 20:12:52 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <string.h>
-#include <ctype.h>
 
-int main ()
+void *ft_memmove(void *dst, const void *src, size_t len)
 {
-//unsigned	char a[] = "qwertyuiop";
-	char dst[] = "defaAhklr";
-//unsigned	char src[] = "defhhklr"; 
+	char *g;
+	const char *h;
+	size_t i;
+	g = (char*)dst;
+	h = (const char*)src;
+	i = 0;
+	if (!g && !h)
+		return (NULL);
 
-	//int a = 65;
-printf("%s", strchr(dst, '\0'));
-// memmove(dst, src, 3);
-//	printf("%s", dst);
-//	printf("%c", '\n');
-//	printf("%s", "2fun ");
+	if (g >= h)
+		while (len)
+		{
+			g[len - 1] = h[len - 1];
+			//			printf("%s", " g>=h");
+			len--;
+		}
 
-// memmove(dst, src, 3);
+	else
+		while(len>0)
+		{
+			//		printf("%s", " g<h");
 
+			g[i]=h[i];
+			len--;
+			i++;
+		}		
 
-// printf ("%s", dst);
- return 0;
+	return (g);
+
 }

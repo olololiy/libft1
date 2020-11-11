@@ -1,34 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/05 18:57:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:29:54 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/10 20:36:23 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/10 21:44:53 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <string.h>
-#include <ctype.h>
 
-int main ()
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-//unsigned	char a[] = "qwertyuiop";
-	char dst[] = "defaAhklr";
-//unsigned	char src[] = "defhhklr"; 
+	unsigned char *d;
+	unsigned char *h;
+	int a;
+//	int b;
+//	int c;
+	n = (unsigned char)n;
 
-	//int a = 65;
-printf("%s", strchr(dst, '\0'));
-// memmove(dst, src, 3);
-//	printf("%s", dst);
-//	printf("%c", '\n');
-//	printf("%s", "2fun ");
+	d = (unsigned char*)s1;
+	h = (unsigned char*)s2;
 
-// memmove(dst, src, 3);
+	while(n > 0)
+	{
+	//	b = (int)d;
+	//	c = (int)h;
 
-
-// printf ("%s", dst);
- return 0;
+		if (*d != *h)	
+		{
+			a = (int)(*d-*h);
+			return a;
+		}
+		else{
+			n--;
+			d++;
+			h++;
+		}
+		}
+		return (0);
 }

@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/05 18:57:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:29:54 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/11 19:14:36 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/11 20:02:08 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <string.h>
-#include <ctype.h>
 
-int main ()
+int ft_toupper(int c)
 {
-//unsigned	char a[] = "qwertyuiop";
-	char dst[] = "defaAhklr";
-//unsigned	char src[] = "defhhklr"; 
+	int b = c;
+	if (c>96 && c<123)
+		b = c -('a'-'A');
 
-	//int a = 65;
-printf("%s", strchr(dst, '\0'));
-// memmove(dst, src, 3);
-//	printf("%s", dst);
-//	printf("%c", '\n');
-//	printf("%s", "2fun ");
-
-// memmove(dst, src, 3);
-
-
-// printf ("%s", dst);
- return 0;
+	return b;
 }
+
+

@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 20:07:54 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/07 19:49:52 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/10 19:33:42 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,21 @@ void *ft_memccpy(void *dst, const void *src, int c, size_t n)
 	
 //	if (!src)
 //		return (NULL);
-	while(n>=0 && *h != c && *h != '\0')
+	while(n)
 		{
-			*g++=*h++;
-			n--;
+			*g = *h;
+	
+			if (*h == c)
+			{
+				*g=*h;
+				return(g + 1);
+			
+			}
+				n--;
+				g++;
+				h++;
 		}
-		return (g);
+
+		return (0);
+		
 }

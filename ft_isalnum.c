@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/05 18:57:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:29:54 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/11 18:49:42 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/11 18:55:05 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <string.h>
-#include <ctype.h>
 
-int main ()
+int ft_isalnum(int c)
 {
-//unsigned	char a[] = "qwertyuiop";
-	char dst[] = "defaAhklr";
-//unsigned	char src[] = "defhhklr"; 
-
-	//int a = 65;
-printf("%s", strchr(dst, '\0'));
-// memmove(dst, src, 3);
-//	printf("%s", dst);
-//	printf("%c", '\n');
-//	printf("%s", "2fun ");
-
-// memmove(dst, src, 3);
-
-
-// printf ("%s", dst);
- return 0;
-}
+if(ft_isalpha(c)==1 || ft_isdigit(c)==1)
+	return(1);
+	else 
+	return(0);
+	}

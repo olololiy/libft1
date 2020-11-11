@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/05 18:57:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:29:54 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/11 20:56:41 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/11 21:10:28 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <string.h>
-#include <ctype.h>
 
-int main ()
+void *ft_strrchr(const void *s, int c)
 {
-//unsigned	char a[] = "qwertyuiop";
-	char dst[] = "defaAhklr";
-//unsigned	char src[] = "defhhklr"; 
+	unsigned char *g;
+	g = (unsigned char*)s;
+	c = (unsigned char)c;	
 
-	//int a = 65;
-printf("%s", strchr(dst, '\0'));
-// memmove(dst, src, 3);
-//	printf("%s", dst);
-//	printf("%c", '\n');
-//	printf("%s", "2fun ");
+	while(*g!='\0')
+	{
+		if (*g == c)
+		{
+			return(g);
 
-// memmove(dst, src, 3);
-
-
-// printf ("%s", dst);
- return 0;
+		}
+		g++;
+	}
+	if (c == '\0')
+		return (g);
+	return (0);
 }
