@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 19:04:14 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/10 20:34:40 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/13 20:33:29 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,8 +21,7 @@ void *ft_memchr(const void *s, int c, size_t n)
 		{
 			if (*g == c)
 			{
-				return(g);
-			
+				return(g);		
 			}
 				n--;
 				g++;

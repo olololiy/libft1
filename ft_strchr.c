@@ -6,15 +6,14 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 20:06:40 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 21:13:36 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/13 19:24:20 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+//#include "libft.h"
 
 void *ft_strchr(const void *s, int c)
 {
 	unsigned char *g;
-	unsigned char *u;
 	g = (unsigned char*)s;
 	c = (unsigned char)c;	
 
@@ -22,11 +21,12 @@ void *ft_strchr(const void *s, int c)
 	{
 		if (*g == c)
 		{
-			u = g;
+			return(g);
+
 		}
 		g++;
 	}
 	if (c == '\0')
-		return (u);
+		return (g);
 	return (0);
 }

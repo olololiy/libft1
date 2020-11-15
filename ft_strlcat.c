@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 20:56:41 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/13 19:53:36 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/14 16:40:56 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/14 19:46:26 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-void *ft_strrchr(const void *s, int c)
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned char *g;
-	unsigned char *u;
-	g = (unsigned char*)s;
-	c = (unsigned char)c;
-	u = 0;	
+	char *ssrc = (char*)src;
+	 while (*dst != '\0' && size != 0)
+ {
+	 size--;
+	 dst++;
 
-	while(*g!='\0')
-	{
-		if (*g == c)
-			u = g;			
-		g++;
-	}
-	if (c == '\0')
-			u=g;	
-	return (u);
+ }
+ while (*ssrc != '\0' && size != 0)
+ {
+	 *dst = *ssrc;
+	 dst++;
+	 ssrc++;
+	 size--;
+
+ }
+ if (size != 0)
+	*dst='\0';
+
+ return (ft_strlen(src) + );
 }

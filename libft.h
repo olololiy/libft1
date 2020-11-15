@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 19:21:35 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 21:11:08 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/14 18:27:31 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@ int	ft_strlen(char *str);
 int ft_isalpha(int c);
 int ft_isdigit(int c);
 void *ft_strrchr(const void *s, int c);
-
-/*
+size_t ft_strlcpy (char *dst, const char *src, size_t size);
+size_t ft_strlcat(char *dst, const char *src, size_t size);
+	/*
 char *strcpy(char *dest, const char *src);
 strlcat(char *dst, const char *src, size_t size);*/
 
