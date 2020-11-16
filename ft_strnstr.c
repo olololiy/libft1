@@ -1,24 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 18:42:48 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/16 20:38:12 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/15 15:40:48 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/15 21:39:35 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+char *ft_strnstr( char *haystack,  char *needle, size_t len)
 {
-	int b;
-	if (c>47&& c<58)
-		b = c - '0';
-	else 
-		b = 0;
+	size_t i;
+	size_t j;
+	size_t a;
 
-	return b;
+	a=0;
+	i=0;
+	j=0;
+	if(*needle==0 || len==0)
+		return haystack;
+	while (*haystack != '\0' && len > 0)
+	{
+		while(haystack[i] == needle[j] && len > 0)
+		{
+			i++;
+			j++;
+			if (needle[j] == '\0')
+				return haystack;
+			len--;
+		}
+		len = len-1+j; 
+		haystack++;
+		i = 0;
+		j = 0;	
+	}
+	return 0;
 }
