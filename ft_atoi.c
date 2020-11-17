@@ -6,19 +6,18 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 22:23:37 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/16 20:50:07 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/17 21:09:31 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
 int ft_atoi(const char *str)
 {
 	const char *s;
 	int neg;
 	int result;
-	int i;
+//	int i;
 	result= 0;
-	i = 0;
+//	i = 0;
 	neg	= 1;
 	s = str;
 	//	skip space
@@ -36,11 +35,12 @@ int ft_atoi(const char *str)
 	//	skip '0';
 	while (*s=='0')
 		s++;
-	while(ft_isdigit((int)*s))
+	while(*s>47&& *s<58)
 	{
-		result=result * (i*10)+ (*s - '0' );
+		result=result*10 + (*s - '0' );
 		s++;
-		i=i*10;
+		//i++;
+		
 	}
 	return (result * neg);
 }

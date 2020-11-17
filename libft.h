@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 19:21:35 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/15 19:54:45 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/17 22:46:59 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define NAME_H
 
 #include <stdio.h>
+#include <stdlib.h>
 void *ft_memset(void *s, int c, size_t n);
 void ft_bzero(void *s, size_t n);
 void *ft_memcpy(void *dest, const void *src, size_t n);
@@ -28,6 +29,7 @@ void *ft_strrchr(const void *s, int c);
 size_t ft_strlcpy (char *dst, const char *src, size_t size);
 size_t ft_strlcat(char *dst,  char *src, size_t size);
 char *ft_strnstr( char *haystack,  char *needle, size_t len);
+char *ft_strdup(const char *s1);
 	/*
 char *strcpy(char *dest, const char *src);
 strlcat(char *dst, const char *src, size_t size);*/

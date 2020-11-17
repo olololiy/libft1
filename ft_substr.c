@@ -1,21 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 18:49:42 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/17 21:04:32 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/17 23:00:42 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/17 23:50:31 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+char *ft_substr(char const *s, unsigned int start, size_t len)
 
-int ft_isalnum(int c)
-{
-	if(ft_isalpha(c)==1 || ft_isdigit(c)==1)
-		return(1);
-	else 
-		return(0);
-}
