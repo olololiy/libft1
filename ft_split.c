@@ -1,33 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/19 20:04:46 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/20 19:21:14 by vfurr            ###   ########.fr       */
+/*   Created: 2020/11/20 19:26:34 by vfurr             #+#    #+#             */
+/*   Updated: 2020/11/20 23:45:35 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+size_t ft_sumwords(char *s, char c)
 {
-	unsigned int start;
-	size_t len;
-	size_t alen;
+	size_t sum;
 
-	if (!s1 || !set)
-		return NULL;
-	alen = 0;
-	start = 0;
-	len = ft_strlen(s1);
-	
-	while (ft_strchr(set, s1[start]))
-		   start++;
-	while (ft_strchr(set, s1[len]))
-		len--;
-	alen++;
-	return (ft_substr(s1, start, len - start - alen + 2));
-} 
+	sum = 0;
+
+	while (!s)
+	{	
+		while (*s == c)
+			s++;
+		while (*s != c)
+			s++;
+		sum++;
+	}
+	return (sum);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t sumwords;
+	char **poolwords;
+	//char **sumwords;
+	if (!s || !c)
+		return (NULL);
+	sumwords = ft_sumwords(s, c);
+	poolwords = (malloc(char *) * sumwords + 1);
+	while 
+	return (poolwords);
+}

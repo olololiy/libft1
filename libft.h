@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 19:21:35 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/19 22:25:28 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/20 19:28:25 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ void *ft_strrchr(const void *s, int c);
 char *ft_substr(const char *s, unsigned int start, size_t len);
 int ft_tolower(int c);
 int ft_toupper(int c);
+char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
+
 	
 	
 	
