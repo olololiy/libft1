@@ -6,19 +6,19 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 19:09:00 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 19:13:39 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/19 21:48:27 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	int b;
-	if (c>31&& c<127)
-		b = 1;
-	else 
-		b = 0;
 
-	return b;
+	if (c > 31 && c < 127)
+		b = 1;
+	else
+		b = 0;
+	return (b);
 }
