@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/vfurr/workplace/libft/ft_split.c
+libft.h
+/Users/vfurr/workplace/libft/libft.h
+
+/Users/vfurr/workplace/libft/libft.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
