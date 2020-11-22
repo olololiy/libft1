@@ -6,7 +6,7 @@
 /*   By: vfurr <vfurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 19:21:35 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/21 16:19:18 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/22 18:41:44 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int ft_tolower(int c);
 int ft_toupper(int c);
 char *ft_strtrim(char const *s1, char const *set);
 char **ft_split(char const *s, char c);
-
+char *ft_itoa(int n);
 	
 	
 	

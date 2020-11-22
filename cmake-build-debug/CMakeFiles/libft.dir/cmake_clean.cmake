@@ -27,8 +27,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/ft_substr.c.o"
   "CMakeFiles/libft.dir/ft_tolower.c.o"
   "CMakeFiles/libft.dir/ft_toupper.c.o"
-  "libft"
+  "CMakeFiles/libft.dir/ft_itoa.c.o"
   "libft.pdb"
+  "libft"
 )
 
 # Per-language clean rules from dependency scanning.

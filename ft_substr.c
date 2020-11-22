@@ -22,13 +22,12 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	if (!s)
 		return (0);
 	alen = ft_strlen(ss + start);
-	if (start >= alen || start >= ft_strlen(ss))
+	if (/*start >= alen || */start >= ft_strlen(ss))
 	{
 		b = malloc(sizeof(char) * 1);
 		if (b == 0)
 			return (0);
 		*b = 0;
-		
 		return (b);
 	}
 	if (len > alen)

@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/vfurr/workplace/libft/ft_isascii.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_isascii.c.o"
   "/Users/vfurr/workplace/libft/ft_isdigit.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_isdigit.c.o"
   "/Users/vfurr/workplace/libft/ft_isprint.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_isprint.c.o"
+  "/Users/vfurr/workplace/libft/ft_itoa.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_itoa.c.o"
   "/Users/vfurr/workplace/libft/ft_memccpy.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_memccpy.c.o"
   "/Users/vfurr/workplace/libft/ft_memchr.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_memchr.c.o"
   "/Users/vfurr/workplace/libft/ft_memcmp.c" "/Users/vfurr/workplace/libft/cmake-build-debug/CMakeFiles/libft.dir/ft_memcmp.c.o"

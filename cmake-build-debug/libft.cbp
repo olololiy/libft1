@@ -104,6 +104,9 @@
 		<Unit filename="/Users/vfurr/workplace/libft/ft_isprint.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/vfurr/workplace/libft/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_memccpy.c">
 			<Option target="libft"/>
 		</Unit>

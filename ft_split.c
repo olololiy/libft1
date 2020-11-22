@@ -20,116 +20,67 @@ size_t ft_sumwords(char *s, char c)
  int y = 0;
 	while (s[y] != '\0')
 	{
-	    if ((s[y] != c && s[y + 1] == c) || s[y + 1] == '\0')
+	    if ((s[y] != c &&( s[y + 1] == c || s[y + 1] == '\0')))
         {
 	        sum++;
-	        //y++;
         }
 	        y++;
-		/*while (*s == c && *s != '\0')
-		{
-			s++;
-		}
-		if (sum == 0 && *s == '\0')
-				return 0;
-		if
-
-		while (*s != c && *s != '\0')
-            s++;
-        if (sum
-        */
-//		printf("%zu", sum);
 	}
 	return (sum);
 }
 
-char	**ft_split(char const *s, char c)
-{
-	size_t sumwords;
-	char **poolwords;
-	char *s1;
+char	**ft_split(char const *s, char c) {
+    size_t sumwords;
+    char **poolwords;
+    char *s1;
 //	char *s2;
-	size_t len;
-	int start;
+    size_t len;
+    int start;
 
-	int y;
-	int i;
+    int y;
+    int i;
 
-	s1 = (char*)s;
-	if (!s || !c)
-		return (NULL);
-	sumwords = ft_sumwords(s1, c);
+    s1 = (char *) s;
+    if (!s || !c)
+        return (NULL);
+    sumwords = ft_sumwords(s1, c);
 
-	poolwords = malloc(sizeof(char *) * (sumwords + 1));
-	if (poolwords == 0)
-			return (0);
-	y = 0;
-	i = 0;
-	start = 0;
+    poolwords = malloc(sizeof(char *) * (sumwords + 1));
+    if (poolwords == 0) {
+        free(poolwords);
+        return (0);
+    }
+    y = 0;
+    i = 0;
+    start = 0;
 
-    while (s[y] != '\0')
-    {
+    while (s[y] != '\0') {
+        if (s[y - 1] == c && s[y] != c) {
+            start = y;
+        }
         if (s[y] != c && (s[y + 1] == c || s[y + 1] == '\0'))
         {
-            len = i - start;
-            i++;
-            y++;
-
-            poolwords[i] = ft_substr(s1, 0, len);
-            if (poolwords[i] == 0)
-            {
-                while (i >= 0)
-                {
+            len = y + 1 - start;
+            poolwords[i] = ft_substr(s1, start, len);
+            if (poolwords[i] == 0) {
+                while (i >= 0) {
                     free(poolwords[i]);
                     i--;
                 }
                 free(poolwords);
             }
+            i++;
         }
-        else if (s[y + 1] != c && y != 0)
-        {
-            start = y + 1;
-            y++;
-        }
-        else
             y++;
 
-//	printf("%d", 0);//delete
-	/*while (s[i] != '\0')
-	{
-		len = 0;
-
-		while (*s1 == c && *s1 != '\0')
-			s1++;
-	//	s2 = s1;
-		while (*s1 != c && *s1 != '\0')
-		{
-			s1++;
-			len++;
-		}
-		poolwords[i] = ft_substr(s1, 0, len);
-		if (poolwords[i] == 0)
-		{
-			while (i >= 0)
-			{
-				free(poolwords[i]);
-			i--;
-			}
-			free(poolwords);
-	}
-		i++;*/
-		//s1 = s1 + len;
-		//printf ("%d", i);
-	}
-	poolwords[i] = NULL;
-//		printf("%d", 1);//delete
-	return (poolwords); 
+    }
+    poolwords[i] = NULL;
+    return (poolwords);
 }
-int main() {
-    char a[] = "olol";
+/*int main() {
+    char a[] = "  me  !       ";
     char **b;
     b = ft_split(a, ' ');
-     printf("%s", b[1]);
-//	printf("%d", 2); //delete	
+   //  printf("%s", *b);
     return 0;
-}
+}*/
