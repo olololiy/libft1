@@ -18,7 +18,7 @@ int stepen(int d, int s)
 {
    int b;
 
-   b = 0;
+   b = 1;
     while(s > 0)
     {
         b = b * d;
@@ -35,25 +35,34 @@ char *ft_itoa(int n)
 
     numb = n;
     i = 0;
-    while(numb > 1)
+    while(numb >= 1)//количество циферок
     {
         numb = numb/10;
         i++;
+//	printf("%d", i);
     }
-    anumb = malloc(sizeof(char)*(i + 3));
+    anumb = malloc(sizeof(char)*(i + 1 ));
     //if
     numb = n;
+    anumb[i+1] = '\0';
     while (i >= 0)
     {
-        anumb[i] = (char*)(n/(stepen(10, i)));
+
+	anumb[i] =(numb %  stepen(10, i-1) + '0');
+      //  anumb[j] = (char*)(n/(stepen(10, i)));
+    //  	printf("%c", anumb[i]);
+	numb = numb / stepen(10, i - 1);
         i--;
+//	printf("%d", i);
     }
+//printf("%s", anumb);
     return (anumb);
 }
 int main()
 {
-    int a = 156;
-    printf("%s", ft_itoa(a));
+    int a = 1000;
+ //   ft_itoa(a);
+   printf("%s", ft_itoa(a));
     return 0;
 }
 
