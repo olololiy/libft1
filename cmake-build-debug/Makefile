@@ -528,6 +528,60 @@ ft_memset.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_memset.c.s
 .PHONY : ft_memset.c.s
 
+ft_putchar_fd.o: ft_putchar_fd.c.o
+
+.PHONY : ft_putchar_fd.o
+
+# target to build an object file
+ft_putchar_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.o
+.PHONY : ft_putchar_fd.c.o
+
+ft_putchar_fd.i: ft_putchar_fd.c.i
+
+.PHONY : ft_putchar_fd.i
+
+# target to preprocess a source file
+ft_putchar_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.i
+.PHONY : ft_putchar_fd.c.i
+
+ft_putchar_fd.s: ft_putchar_fd.c.s
+
+.PHONY : ft_putchar_fd.s
+
+# target to generate assembly for a file
+ft_putchar_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.s
+.PHONY : ft_putchar_fd.c.s
+
+ft_putcharfd.o: ft_putcharfd.c.o
+
+.PHONY : ft_putcharfd.o
+
+# target to build an object file
+ft_putcharfd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.o
+.PHONY : ft_putcharfd.c.o
+
+ft_putcharfd.i: ft_putcharfd.c.i
+
+.PHONY : ft_putcharfd.i
+
+# target to preprocess a source file
+ft_putcharfd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.i
+.PHONY : ft_putcharfd.c.i
+
+ft_putcharfd.s: ft_putcharfd.c.s
+
+.PHONY : ft_putcharfd.s
+
+# target to generate assembly for a file
+ft_putcharfd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.s
+.PHONY : ft_putcharfd.c.s
+
 ft_split.o: ft_split.c.o
 
 .PHONY : ft_split.o
@@ -716,6 +770,33 @@ ft_strlen.s: ft_strlen.c.s
 ft_strlen.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strlen.c.s
 .PHONY : ft_strlen.c.s
+
+ft_strmapi.o: ft_strmapi.c.o
+
+.PHONY : ft_strmapi.o
+
+# target to build an object file
+ft_strmapi.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strmapi.c.o
+.PHONY : ft_strmapi.c.o
+
+ft_strmapi.i: ft_strmapi.c.i
+
+.PHONY : ft_strmapi.i
+
+# target to preprocess a source file
+ft_strmapi.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strmapi.c.i
+.PHONY : ft_strmapi.c.i
+
+ft_strmapi.s: ft_strmapi.c.s
+
+.PHONY : ft_strmapi.s
+
+# target to generate assembly for a file
+ft_strmapi.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strmapi.c.s
+.PHONY : ft_strmapi.c.s
 
 ft_strncmp.o: ft_strncmp.c.o
 
@@ -960,6 +1041,12 @@ help:
 	@echo "... ft_memset.o"
 	@echo "... ft_memset.i"
 	@echo "... ft_memset.s"
+	@echo "... ft_putchar_fd.o"
+	@echo "... ft_putchar_fd.i"
+	@echo "... ft_putchar_fd.s"
+	@echo "... ft_putcharfd.o"
+	@echo "... ft_putcharfd.i"
+	@echo "... ft_putcharfd.s"
 	@echo "... ft_split.o"
 	@echo "... ft_split.i"
 	@echo "... ft_split.s"
@@ -981,6 +1068,9 @@ help:
 	@echo "... ft_strlen.o"
 	@echo "... ft_strlen.i"
 	@echo "... ft_strlen.s"
+	@echo "... ft_strmapi.o"
+	@echo "... ft_strmapi.i"
+	@echo "... ft_strmapi.s"
 	@echo "... ft_strncmp.o"
 	@echo "... ft_strncmp.i"
 	@echo "... ft_strncmp.s"

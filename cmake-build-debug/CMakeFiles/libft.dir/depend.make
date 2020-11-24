@@ -45,6 +45,10 @@ CMakeFiles/libft.dir/ft_memmove.c.o: ../libft.h
 CMakeFiles/libft.dir/ft_memset.c.o: ../ft_memset.c
 CMakeFiles/libft.dir/ft_memset.c.o: ../libft.h
 
+CMakeFiles/libft.dir/ft_putchar_fd.c.o: ../ft_putchar_fd.c
+CMakeFiles/libft.dir/ft_putchar_fd.c.o: ../libft.h
+
+
 CMakeFiles/libft.dir/ft_split.c.o: ../ft_split.c
 CMakeFiles/libft.dir/ft_split.c.o: ../libft.h
 
@@ -65,6 +69,9 @@ CMakeFiles/libft.dir/ft_strlcpy.c.o: ../libft.h
 
 CMakeFiles/libft.dir/ft_strlen.c.o: ../ft_strlen.c
 CMakeFiles/libft.dir/ft_strlen.c.o: ../libft.h
+
+CMakeFiles/libft.dir/ft_strmapi.c.o: ../ft_strmapi.c
+CMakeFiles/libft.dir/ft_strmapi.c.o: ../libft.h
 
 CMakeFiles/libft.dir/ft_strncmp.c.o: ../ft_strncmp.c
 CMakeFiles/libft.dir/ft_strncmp.c.o: ../libft.h

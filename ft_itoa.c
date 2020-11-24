@@ -14,55 +14,66 @@
 
 
 
-int stepen(int d, int s)
-{
-   int b;
 
-   b = 1;
-    while(s > 0)
-    {
-        b = b * d;
-        s--;
-    }
-    return b;
-}
-
-char *ft_itoa(int n)
+int countdigits(n)
 {
-    int numb;
     int i;
-    char *anumb;
 
-    numb = n;
     i = 0;
-    while(numb >= 1)//количество циферок
-    {
-        numb = numb/10;
+    if (n < 0)
         i++;
-//	printf("%d", i);
-    }
-    anumb = malloc(sizeof(char)*(i + 1 ));
-    //if
-    numb = n;
-    anumb[i+1] = '\0';
-    while (i >= 0)
-    {
+    if (n > 0)
+        n = n * (-1);
 
-	anumb[i] =(numb %  stepen(10, i-1) + '0');
-      //  anumb[j] = (char*)(n/(stepen(10, i)));
-    //  	printf("%c", anumb[i]);
-	numb = numb / stepen(10, i - 1);
-        i--;
-//	printf("%d", i);
+    while(n < 0)//количество циферок
+    {
+        n = n/10;
+        i++;
     }
-//printf("%s", anumb);
+    return (i);
+}
+char *digtochar(int n, int colchar)
+{
+    char *anumb;
+    if(!(anumb = malloc(sizeof(char) * (colchar + 1))))
+        return (0);
+
+
+    anumb[colchar] = '\0';
+    colchar--;
+
+    if (n < 0)
+    {
+        anumb[0] = '-';
+    }
+    else
+        n = n * (-1);
+    while (n)
+    {
+        anumb[colchar] = (n % 10)*(-1)  + '0';
+        n = n / 10;
+        colchar--;
+    }
+
     return (anumb);
 }
-int main()
-{
-    int a = 1000;
- //   ft_itoa(a);
-   printf("%s", ft_itoa(a));
-    return 0;
+
+char *ft_itoa(int n) {
+    char *anumb;
+    int colchar;
+    if (n == 0) {
+        anumb = malloc(sizeof(char) * (2));
+        anumb[0] = '0';
+        anumb[1] = '\0';
+        return (anumb);
+    }
+    if (!n)
+        return NULL;
+    colchar = countdigits(n);
+    anumb = digtochar(n, colchar);
+
+    return (anumb);
 }
+
+
 

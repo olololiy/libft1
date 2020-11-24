@@ -125,6 +125,12 @@
 		<Unit filename="/Users/vfurr/workplace/libft/ft_memset.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/vfurr/workplace/libft/ft_putchar_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/vfurr/workplace/libft/ft_putcharfd.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_split.c">
 			<Option target="libft"/>
 		</Unit>
@@ -144,6 +150,9 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_strlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/vfurr/workplace/libft/ft_strmapi.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_strncmp.c">

@@ -10,21 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*emptychar(char *s)
+char	*emptychar(char *s)
 {
 	while ((*s >= 9 && *s <= 13) || *s == ' ')
 		s++;
 	return (s);
 }
 
-char		*skipzero(char *s)
+char	*skipzero(char *s)
 {
 	while (*s == '0')
 		s++;
 	return (s);
 }
 
-int			onlydigit(char *s)
+int		onlydigit(char *s)
 {
 	int (result);
 
@@ -44,7 +44,7 @@ int		ft_atoi(const	char *str)
 	int result;
 
 	result = 0;
-	neg = 1;
+	neg	= 1;
 	s = (char*)str;
 	s = emptychar(s);
 	if (!s)
