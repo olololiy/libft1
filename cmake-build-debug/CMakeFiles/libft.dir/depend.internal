@@ -48,7 +48,9 @@ CMakeFiles/libft.dir/ft_memset.c.o
 CMakeFiles/libft.dir/ft_putchar_fd.c.o
  /Users/vfurr/workplace/libft/ft_putchar_fd.c
  /Users/vfurr/workplace/libft/libft.h
-CMakeFiles/libft.dir/ft_putcharfd.c.o
+CMakeFiles/libft.dir/ft_putnbr_fd.c.o
+ /Users/vfurr/workplace/libft/ft_putnbr_fd.c
+ /Users/vfurr/workplace/libft/libft.h
 CMakeFiles/libft.dir/ft_split.c.o
  /Users/vfurr/workplace/libft/ft_split.c
  /Users/vfurr/workplace/libft/libft.h

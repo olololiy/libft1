@@ -21,7 +21,6 @@ add_executable(libft
         ft_memcpy.c
         ft_memmove.c
         ft_memset.c
-        ft_putcharfd.c
         ft_split.c
         ft_strchr.c
         ft_strdup.c
@@ -37,4 +36,5 @@ add_executable(libft
         ft_substr.c
         ft_tolower.c
         ft_toupper.c
-        libft.h ft_putchar_fd.c)
+        ft_putchar_fd.c
+        ft_putnbr_fd.c)

@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/ft_memcpy.c.o"
   "CMakeFiles/libft.dir/ft_memmove.c.o"
   "CMakeFiles/libft.dir/ft_memset.c.o"
-  "CMakeFiles/libft.dir/ft_putcharfd.c.o"
   "CMakeFiles/libft.dir/ft_split.c.o"
   "CMakeFiles/libft.dir/ft_strchr.c.o"
   "CMakeFiles/libft.dir/ft_strdup.c.o"
@@ -31,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/ft_tolower.c.o"
   "CMakeFiles/libft.dir/ft_toupper.c.o"
   "CMakeFiles/libft.dir/ft_putchar_fd.c.o"
+  "CMakeFiles/libft.dir/ft_putnbr_fd.c.o"
   "libft.pdb"
   "libft"
 )

@@ -48,6 +48,8 @@ CMakeFiles/libft.dir/ft_memset.c.o: ../libft.h
 CMakeFiles/libft.dir/ft_putchar_fd.c.o: ../ft_putchar_fd.c
 CMakeFiles/libft.dir/ft_putchar_fd.c.o: ../libft.h
 
+CMakeFiles/libft.dir/ft_putnbr_fd.c.o: ../ft_putnbr_fd.c
+CMakeFiles/libft.dir/ft_putnbr_fd.c.o: ../libft.h
 
 CMakeFiles/libft.dir/ft_split.c.o: ../ft_split.c
 CMakeFiles/libft.dir/ft_split.c.o: ../libft.h

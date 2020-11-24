@@ -17,7 +17,7 @@ size_t ft_sumwords(char *s, char c)
 	size_t sum;
 
 	sum = 0;
- int y = 0;
+    int y = 0;
 	while (s[y] != '\0')
 	{
 	    if ((s[y] != c &&( s[y + 1] == c || s[y + 1] == '\0')))
@@ -29,7 +29,8 @@ size_t ft_sumwords(char *s, char c)
 	return (sum);
 }
 
-char	**ft_split(char const *s, char c) {
+char	**ft_split(char const *s, char c)
+{
     size_t sumwords;
     char **poolwords;
     char *s1;
@@ -46,7 +47,8 @@ char	**ft_split(char const *s, char c) {
     sumwords = ft_sumwords(s1, c);
 
     poolwords = malloc(sizeof(char *) * (sumwords + 1));
-    if (poolwords == 0) {
+    if (poolwords == 0)
+    {
         free(poolwords);
         return (0);
     }
@@ -77,10 +79,11 @@ char	**ft_split(char const *s, char c) {
     poolwords[i] = NULL;
     return (poolwords);
 }
-/*int main() {
-    char a[] = "  me  !       ";
-    char **b;
-    b = ft_split(a, ' ');
-   //  printf("%s", *b);
-    return 0;
-}*/
+
+
+int main()
+{
+	char **a;
+	a = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+
+}

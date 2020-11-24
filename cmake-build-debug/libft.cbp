@@ -128,7 +128,7 @@
 		<Unit filename="/Users/vfurr/workplace/libft/ft_putchar_fd.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/Users/vfurr/workplace/libft/ft_putcharfd.c">
+		<Unit filename="/Users/vfurr/workplace/libft/ft_putnbr_fd.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_split.c">
@@ -174,9 +174,6 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/ft_toupper.c">
-			<Option target="libft"/>
-		</Unit>
-		<Unit filename="/Users/vfurr/workplace/libft/libft.h">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/vfurr/workplace/libft/CMakeLists.txt">

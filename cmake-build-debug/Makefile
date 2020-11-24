@@ -555,32 +555,32 @@ ft_putchar_fd.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.s
 .PHONY : ft_putchar_fd.c.s
 
-ft_putcharfd.o: ft_putcharfd.c.o
+ft_putnbr_fd.o: ft_putnbr_fd.c.o
 
-.PHONY : ft_putcharfd.o
+.PHONY : ft_putnbr_fd.o
 
 # target to build an object file
-ft_putcharfd.c.o:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.o
-.PHONY : ft_putcharfd.c.o
+ft_putnbr_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.o
+.PHONY : ft_putnbr_fd.c.o
 
-ft_putcharfd.i: ft_putcharfd.c.i
+ft_putnbr_fd.i: ft_putnbr_fd.c.i
 
-.PHONY : ft_putcharfd.i
+.PHONY : ft_putnbr_fd.i
 
 # target to preprocess a source file
-ft_putcharfd.c.i:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.i
-.PHONY : ft_putcharfd.c.i
+ft_putnbr_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.i
+.PHONY : ft_putnbr_fd.c.i
 
-ft_putcharfd.s: ft_putcharfd.c.s
+ft_putnbr_fd.s: ft_putnbr_fd.c.s
 
-.PHONY : ft_putcharfd.s
+.PHONY : ft_putnbr_fd.s
 
 # target to generate assembly for a file
-ft_putcharfd.c.s:
-	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putcharfd.c.s
-.PHONY : ft_putcharfd.c.s
+ft_putnbr_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.s
+.PHONY : ft_putnbr_fd.c.s
 
 ft_split.o: ft_split.c.o
 
@@ -1044,9 +1044,9 @@ help:
 	@echo "... ft_putchar_fd.o"
 	@echo "... ft_putchar_fd.i"
 	@echo "... ft_putchar_fd.s"
-	@echo "... ft_putcharfd.o"
-	@echo "... ft_putcharfd.i"
-	@echo "... ft_putcharfd.s"
+	@echo "... ft_putnbr_fd.o"
+	@echo "... ft_putnbr_fd.i"
+	@echo "... ft_putnbr_fd.s"
 	@echo "... ft_split.o"
 	@echo "... ft_split.i"
 	@echo "... ft_split.s"
