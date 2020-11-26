@@ -6,17 +6,18 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 20:02:51 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:03:50 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 00:26:30 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int		ft_tolower(int c)
 {
-	int b = c;
-	if (c>64 && c<91)
-		b = c +('a'-'A');
+	int b;
 
-	return b;
+	b = c;
+	if (c > 64 && c < 91)
+		b = c + ('a' - 'A');
+	return (b);
 }

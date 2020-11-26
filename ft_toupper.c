@@ -6,19 +6,18 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 19:14:36 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/11 20:02:08 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 00:25:10 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int		ft_toupper(int c)
 {
-	int b = c;
-	if (c>96 && c<123)
-		b = c -('a'-'A');
+	int b;
 
-	return b;
+	b = c;
+	if (c > 96 && c < 123)
+		b = c - ('a' - 'A');
+	return (b);
 }
-
-

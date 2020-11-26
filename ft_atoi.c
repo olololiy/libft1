@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 22:23:37 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/19 21:38:28 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/25 22:04:44 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ int		onlydigit(char *s)
 
 int		ft_atoi(const	char *str)
 {
-	char *s;
-	int neg;
-	int result;
+	char	*s;
+	int		neg;
+	int		result;
 
 	result = 0;
-	neg	= 1;
+	neg = 1;
 	s = (char*)str;
 	s = emptychar(s);
 	if (!s)
