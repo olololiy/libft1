@@ -6,13 +6,13 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 02:50:56 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/26 18:21:49 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 19:55:31 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		stepen(int d, int s)
+static	int		stepen(int d, int s)
 {
 	int b;
 
@@ -25,7 +25,7 @@ int		stepen(int d, int s)
 	return (b);
 }
 
-int		countdigits1(int n)
+static	int		countdigits1(int n)
 {
 	int	i;
 
@@ -42,7 +42,7 @@ int		countdigits1(int n)
 	return (i);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void			ft_putnbr_fd(int n, int fd)
 {
 	int i;
 	int num;

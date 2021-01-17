@@ -6,13 +6,13 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 15:40:48 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/26 01:33:57 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 20:00:25 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*galosha(char *hhaystack, char *nneedle, size_t len)
+static	char	*galosha(char *hhaystack, char *nneedle, size_t len)
 {
 	size_t	i;
 	size_t	j;
@@ -34,7 +34,8 @@ char	*galosha(char *hhaystack, char *nneedle, size_t len)
 	return (0);
 }
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char			*ft_strnstr(const char *haystack,
+		const char *needle, size_t len)
 {
 	char	*hhaystack;
 	char	*nneedle;

@@ -6,13 +6,13 @@
 /*   By: vfurr <vfurr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 19:26:34 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/26 19:40:24 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 19:56:37 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_sumwords(char *s, char c)
+static	size_t	ft_sumwords(char *s, char c)
 {
 	size_t	sum;
 	int		y;
@@ -28,7 +28,7 @@ size_t	ft_sumwords(char *s, char c)
 	return (sum);
 }
 
-void	ft_free(char **poolwords, int i)
+static	void	ft_free(char **poolwords, int i)
 {
 	while (i >= 0)
 		free(poolwords[i--]);
@@ -37,7 +37,7 @@ void	ft_free(char **poolwords, int i)
 	return ;
 }
 
-void	mallocker2000(char *s, char c, char **poolwords, int i)
+static	void	mallocker2000(char *s, char c, char **poolwords, int i)
 {
 	int		y;
 	int		start;
@@ -64,7 +64,7 @@ void	mallocker2000(char *s, char c, char **poolwords, int i)
 	}
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	size_t	sumwords;
 	char	**poolwords;

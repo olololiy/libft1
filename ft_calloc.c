@@ -6,7 +6,7 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 18:58:43 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/19 21:42:20 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/27 11:56:44 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	char *p;
 
-	if (!count && size != 0)
-		return (0);
 	if (!(p = malloc(size * count)))
-		return (0);
+		return (NULL);
 	ft_bzero(p, count * size);
 	return (p);
 }

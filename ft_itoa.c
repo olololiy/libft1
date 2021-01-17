@@ -6,13 +6,13 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 18:39:27 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/26 18:28:53 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 19:54:36 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		countdigits(int n)
+static	int		countdigits(int n)
 {
 	int i;
 
@@ -29,7 +29,7 @@ int		countdigits(int n)
 	return (i);
 }
 
-char	*digtochar(int n, int colchar)
+static	char	*digtochar(int n, int colchar)
 {
 	char	*anumb;
 
@@ -52,7 +52,7 @@ char	*digtochar(int n, int colchar)
 	return (anumb);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*anumb;
 	int		colchar;

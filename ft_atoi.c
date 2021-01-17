@@ -6,25 +6,27 @@
 /*   By: vfurr <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 22:23:37 by vfurr             #+#    #+#             */
-/*   Updated: 2020/11/25 22:04:44 by vfurr            ###   ########.fr       */
+/*   Updated: 2020/11/26 20:01:33 by vfurr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*emptychar(char *s)
+#include "libft.h"
+
+static	char	*emptychar(char *s)
 {
 	while ((*s >= 9 && *s <= 13) || *s == ' ')
 		s++;
 	return (s);
 }
 
-char	*skipzero(char *s)
+static	char	*skipzero(char *s)
 {
 	while (*s == '0')
 		s++;
 	return (s);
 }
 
-int		onlydigit(char *s)
+static	int		onlydigit(char *s)
 {
 	int (result);
 
@@ -37,7 +39,7 @@ int		onlydigit(char *s)
 	return (result);
 }
 
-int		ft_atoi(const	char *str)
+int				ft_atoi(const	char *str)
 {
 	char	*s;
 	int		neg;
