@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <string.h>
 
-int		ft_atoi(const char *str);
+int				ft_atoi(const	char *str, t_config *config);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
